@@ -1,0 +1,156 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 6316395E
+P 1400 1750
+F 0 "V1" H 1530 1841 50  0000 L CNN
+F 1 "24VDC" H 1530 1750 50  0000 L CNN
+F 2 "" H 1400 1750 50  0001 C CNN
+F 3 "~" H 1400 1750 50  0001 C CNN
+F 4 "Y" H 1400 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 1400 1750 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 1530 1659 50  0000 L CNN "Spice_Model"
+	1    1400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 63164B35
+P 1400 1950
+F 0 "#GND01" H 1400 1850 50  0001 C CNN
+F 1 "0" H 1400 2039 50  0000 C CNN
+F 2 "" H 1400 1950 50  0001 C CNN
+F 3 "~" H 1400 1950 50  0001 C CNN
+	1    1400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1500 1400 1550
+$Comp
+L pspice:R R1
+U 1 1 63165568
+P 2800 1500
+F 0 "R1" V 2595 1500 50  0000 C CNN
+F 1 "20k" V 2686 1500 50  0000 C CNN
+F 2 "" H 2800 1500 50  0001 C CNN
+F 3 "~" H 2800 1500 50  0001 C CNN
+	1    2800 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1500 2550 1500
+$Comp
+L Isolator:TLP127 U1
+U 1 1 6316778C
+P 3350 1600
+F 0 "U1" H 3350 1925 50  0000 C CNN
+F 1 "TLP127" H 3350 1834 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 3350 1300 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 3280 1600 50  0001 L CNN
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6316918B
+P 2900 1700
+F 0 "D1" H 2893 1917 50  0000 C CNN
+F 1 "LED" H 2893 1826 50  0000 C CNN
+F 2 "" H 2900 1700 50  0001 C CNN
+F 3 "~" H 2900 1700 50  0001 C CNN
+	1    2900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6316A0C9
+P 3850 1600
+F 0 "C1" H 3965 1646 50  0000 L CNN
+F 1 "0.1uF" H 3965 1555 50  0000 L CNN
+F 2 "" H 3888 1450 50  0001 C CNN
+F 3 "~" H 3850 1600 50  0001 C CNN
+	1    3850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R2
+U 1 1 6316AAF0
+P 3850 1200
+F 0 "R2" H 3782 1154 50  0000 R CNN
+F 1 "10k" H 3782 1245 50  0000 R CNN
+F 2 "" H 3850 1200 50  0001 C CNN
+F 3 "~" H 3850 1200 50  0001 C CNN
+	1    3850 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 1500 3850 1450
+Wire Wire Line
+	3650 1500 3850 1500
+Connection ~ 3850 1450
+Wire Wire Line
+	3650 1700 3850 1700
+Wire Wire Line
+	3850 1700 3850 1750
+$Comp
+L Simulation_SPICE:VDC V2
+U 1 1 6316FD14
+P 3500 900
+F 0 "V2" H 3630 991 50  0000 L CNN
+F 1 "5VDC" H 3630 900 50  0000 L CNN
+F 2 "" H 3500 900 50  0001 C CNN
+F 3 "~" H 3500 900 50  0001 C CNN
+F 4 "Y" H 3500 900 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 3500 900 50  0001 L CNN "Spice_Primitive"
+F 6 "dc(1)" H 3630 809 50  0000 L CNN "Spice_Model"
+	1    3500 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 700  3850 700 
+Wire Wire Line
+	3850 700  3850 950 
+Wire Wire Line
+	2750 1700 2250 1700
+Wire Wire Line
+	2250 1700 2250 1850
+Wire Wire Line
+	2250 1850 1400 1850
+$Comp
+L pspice:0 #GND02
+U 1 1 6318567B
+P 3500 1100
+F 0 "#GND02" H 3500 1000 50  0001 C CNN
+F 1 "0" H 3500 1189 50  0000 C CNN
+F 2 "" H 3500 1100 50  0001 C CNN
+F 3 "~" H 3500 1100 50  0001 C CNN
+	1    3500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND03
+U 1 1 6317F9EB
+P 3850 1750
+F 0 "#GND03" H 3850 1650 50  0001 C CNN
+F 1 "0" H 3850 1839 50  0000 C CNN
+F 2 "" H 3850 1750 50  0001 C CNN
+F 3 "~" H 3850 1750 50  0001 C CNN
+	1    3850 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 1750
+$EndSCHEMATC

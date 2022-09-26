@@ -1,0 +1,2815 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x08 J1
+U 1 1 6314ECE9
+P 800 4300
+F 0 "J1" H 718 3675 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 718 3766 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x08_P5.00mm_45-Degree" H 800 4300 50  0001 C CNN
+F 3 "~" H 800 4300 50  0001 C CNN
+	1    800  4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 631623B8
+P 1950 1250
+F 0 "R1" V 1743 1250 50  0000 C CNN
+F 1 "20k" V 1834 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 1250 50  0001 C CNN
+F 3 "~" H 1950 1250 50  0001 C CNN
+F 4 "R" H 1950 1250 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 1250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 1250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 631643FE
+P 3150 1350
+F 0 "C1" H 3265 1396 50  0000 L CNN
+F 1 "0.1uF" H 3265 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 1200 50  0001 C CNN
+F 3 "~" H 3150 1350 50  0001 C CNN
+	1    3150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 631640D7
+P 1950 1450
+F 0 "D1" H 1950 1550 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 1350 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 1450 50  0001 C CNN
+F 3 "~" H 1950 1450 50  0001 C CNN
+	1    1950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U1
+U 1 1 63162DBA
+P 2550 1350
+F 0 "U1" H 2550 1675 50  0000 C CNN
+F 1 "TLP127" H 2550 1584 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 1050 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 1350 50  0001 L CNN
+	1    2550 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 4600 2    50   Input ~ 0
+IN16
+Text GLabel 1000 4500 2    50   Input ~ 0
+IN17
+Text GLabel 1000 4400 2    50   Input ~ 0
+IN18
+Text GLabel 1000 4300 2    50   Input ~ 0
+IN19
+Text GLabel 1000 4200 2    50   Input ~ 0
+IN20
+Text GLabel 1000 4100 2    50   Input ~ 0
+IN21
+Text GLabel 1000 4000 2    50   Input ~ 0
+IN22
+$Comp
+L Connector:Screw_Terminal_01x08 J2
+U 1 1 6316C314
+P 850 11250
+F 0 "J2" H 768 10625 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" H 768 10716 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x08_P5.00mm_45-Degree" H 850 11250 50  0001 C CNN
+F 3 "~" H 850 11250 50  0001 C CNN
+	1    850  11250
+	-1   0    0    1   
+$EndComp
+Text GLabel 1050 11550 2    50   Input ~ 0
+IN8
+Text GLabel 1050 11450 2    50   Input ~ 0
+IN9
+Text GLabel 1050 11350 2    50   Input ~ 0
+IN10
+Text GLabel 1050 11250 2    50   Input ~ 0
+IN11
+Text GLabel 1050 11150 2    50   Input ~ 0
+IN12
+Text GLabel 1050 11050 2    50   Input ~ 0
+IN13
+Text GLabel 1050 10950 2    50   Input ~ 0
+IN14
+Text GLabel 1050 10850 2    50   Input ~ 0
+IN15
+Text GLabel 1100 18950 2    50   Input ~ 0
+IN0
+Text GLabel 1100 18850 2    50   Input ~ 0
+IN1
+Text GLabel 1100 18750 2    50   Input ~ 0
+IN2
+Text GLabel 1100 18650 2    50   Input ~ 0
+IN3
+Text GLabel 1100 18550 2    50   Input ~ 0
+IN4
+Text GLabel 1100 18450 2    50   Input ~ 0
+IN5
+Text GLabel 1100 18350 2    50   Input ~ 0
+IN6
+Text GLabel 1100 18250 2    50   Input ~ 0
+IN7
+Wire Wire Line
+	2100 1250 2250 1250
+Wire Wire Line
+	2250 1450 2100 1450
+Wire Wire Line
+	2850 1250 3050 1250
+Wire Wire Line
+	3050 1250 3050 1200
+Wire Wire Line
+	3050 1200 3150 1200
+Wire Wire Line
+	2850 1450 3050 1450
+Wire Wire Line
+	3050 1450 3050 1500
+Wire Wire Line
+	3050 1500 3150 1500
+Text GLabel 1800 1250 0    50   Input ~ 0
+IN23
+Connection ~ 3150 1200
+$Comp
+L Device:R R25
+U 1 1 631716B6
+P 3150 1050
+F 0 "R25" H 3080 1004 50  0000 R CNN
+F 1 "10K" H 3080 1095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 1050 50  0001 C CNN
+F 3 "~" H 3150 1050 50  0001 C CNN
+	1    3150 1050
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 900  1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 1200 3150 1200
+Text GLabel 4000 1200 2    50   Input ~ 0
+AA23
+$Comp
+L Device:R R2
+U 1 1 631B1254
+P 1950 2050
+F 0 "R2" V 1743 2050 50  0000 C CNN
+F 1 "20k" V 1834 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 2050 50  0001 C CNN
+F 3 "~" H 1950 2050 50  0001 C CNN
+F 4 "R" H 1950 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 631B125E
+P 3150 2150
+F 0 "C2" H 3265 2196 50  0000 L CNN
+F 1 "0.1uF" H 3265 2105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 2000 50  0001 C CNN
+F 3 "~" H 3150 2150 50  0001 C CNN
+	1    3150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 631B1268
+P 1950 2250
+F 0 "D2" H 1950 2350 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 2150 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 2250 50  0001 C CNN
+F 3 "~" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U2
+U 1 1 631B1272
+P 2550 2150
+F 0 "U2" H 2550 2475 50  0000 C CNN
+F 1 "TLP127" H 2550 2384 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 1850 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 2150 50  0001 L CNN
+	1    2550 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 2250 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 2050 2250 2050
+Wire Wire Line
+	2250 2250 2100 2250
+Wire Wire Line
+	2850 2050 3050 2050
+Wire Wire Line
+	3050 2050 3050 2000
+Wire Wire Line
+	3050 2000 3150 2000
+Wire Wire Line
+	2850 2250 3050 2250
+Wire Wire Line
+	3050 2250 3050 2300
+Wire Wire Line
+	3050 2300 3150 2300
+Text GLabel 1800 2050 0    50   Input ~ 0
+IN22
+Connection ~ 3150 2000
+$Comp
+L Device:R R26
+U 1 1 631B1287
+P 3150 1850
+F 0 "R26" H 3080 1804 50  0000 R CNN
+F 1 "10K" H 3080 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 1850 50  0001 C CNN
+F 3 "~" H 3150 1850 50  0001 C CNN
+	1    3150 1850
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 1700 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 2000 3150 2000
+Text GLabel 4000 2000 2    50   Input ~ 0
+AA22
+$Comp
+L Device:R R3
+U 1 1 631B8AA8
+P 1950 2850
+F 0 "R3" V 1743 2850 50  0000 C CNN
+F 1 "20k" V 1834 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 2850 50  0001 C CNN
+F 3 "~" H 1950 2850 50  0001 C CNN
+F 4 "R" H 1950 2850 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 2850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 2850 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 631B8ABE
+P 3150 2950
+F 0 "C3" H 3265 2996 50  0000 L CNN
+F 1 "0.1uF" H 3265 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 2800 50  0001 C CNN
+F 3 "~" H 3150 2950 50  0001 C CNN
+	1    3150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 631B8AC8
+P 1950 3050
+F 0 "D3" H 1950 3150 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 2950 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 3050 50  0001 C CNN
+F 3 "~" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U3
+U 1 1 631B8AD2
+P 2550 2950
+F 0 "U3" H 2550 3275 50  0000 C CNN
+F 1 "tlp127" H 2550 3184 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 2650 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 2950 50  0001 L CNN
+	1    2550 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 3050 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 2850 2250 2850
+Wire Wire Line
+	2250 3050 2100 3050
+Wire Wire Line
+	2850 2850 3050 2850
+Wire Wire Line
+	3050 2850 3050 2800
+Wire Wire Line
+	3050 2800 3150 2800
+Wire Wire Line
+	2850 3050 3050 3050
+Wire Wire Line
+	3050 3050 3050 3100
+Wire Wire Line
+	3050 3100 3150 3100
+Text GLabel 1800 2850 0    50   Input ~ 0
+IN21
+Connection ~ 3150 2800
+$Comp
+L Device:R R27
+U 1 1 631B8AE7
+P 3150 2650
+F 0 "R27" H 3080 2604 50  0000 R CNN
+F 1 "10K" H 3080 2695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 2650 50  0001 C CNN
+F 3 "~" H 3150 2650 50  0001 C CNN
+	1    3150 2650
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 2500 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 2800 3150 2800
+Text GLabel 4000 2800 2    50   Input ~ 0
+AA21
+$Comp
+L Device:R R4
+U 1 1 631B8B01
+P 1950 3650
+F 0 "R4" V 1743 3650 50  0000 C CNN
+F 1 "20k" V 1834 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 3650 50  0001 C CNN
+F 3 "~" H 1950 3650 50  0001 C CNN
+F 4 "R" H 1950 3650 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 3650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 3650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 631B8B0B
+P 3150 3750
+F 0 "C4" H 3265 3796 50  0000 L CNN
+F 1 "0.1uF" H 3265 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 3600 50  0001 C CNN
+F 3 "~" H 3150 3750 50  0001 C CNN
+	1    3150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 631B8B15
+P 1950 3850
+F 0 "D4" H 1950 3950 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 3750 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 3850 50  0001 C CNN
+F 3 "~" H 1950 3850 50  0001 C CNN
+	1    1950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U4
+U 1 1 631B8B1F
+P 2550 3750
+F 0 "U4" H 2550 4075 50  0000 C CNN
+F 1 "tlp127" H 2550 3984 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 3450 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 3750 50  0001 L CNN
+	1    2550 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 3850 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 3650 2250 3650
+Wire Wire Line
+	2250 3850 2100 3850
+Wire Wire Line
+	2850 3650 3050 3650
+Wire Wire Line
+	3050 3650 3050 3600
+Wire Wire Line
+	3050 3600 3150 3600
+Wire Wire Line
+	2850 3850 3050 3850
+Wire Wire Line
+	3050 3850 3050 3900
+Wire Wire Line
+	3050 3900 3150 3900
+Text GLabel 1800 3650 0    50   Input ~ 0
+IN20
+Connection ~ 3150 3600
+$Comp
+L Device:R R28
+U 1 1 631B8B34
+P 3150 3450
+F 0 "R28" H 3080 3404 50  0000 R CNN
+F 1 "10K" H 3080 3495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 3450 50  0001 C CNN
+F 3 "~" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 3300 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 3600 3150 3600
+Text GLabel 4000 3600 2    50   Input ~ 0
+AA20
+$Comp
+L 74xx:74HC14 U9
+U 6 1 631C9D2F
+P 3700 1200
+F 0 "U9" H 3700 1517 50  0000 C CNN
+F 1 "74HC14" H 3700 1426 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 1200 50  0001 C CNN
+	6    3700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 5 1 631CAD65
+P 3700 2000
+F 0 "U9" H 3700 2317 50  0000 C CNN
+F 1 "74HC14" H 3700 2226 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 2000 50  0001 C CNN
+	5    3700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 4 1 631CB75C
+P 3700 2800
+F 0 "U9" H 3700 3117 50  0000 C CNN
+F 1 "74HC14" H 3700 3026 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 2800 50  0001 C CNN
+	4    3700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 3 1 631CC64E
+P 3700 3600
+F 0 "U9" H 3700 3917 50  0000 C CNN
+F 1 "74HC14" H 3700 3826 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 3600 50  0001 C CNN
+	3    3700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 631D779B
+P 1950 4500
+F 0 "R5" V 1743 4500 50  0000 C CNN
+F 1 "20k" V 1834 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 4500 50  0001 C CNN
+F 3 "~" H 1950 4500 50  0001 C CNN
+F 4 "R" H 1950 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 631D77A5
+P 3150 4600
+F 0 "C5" H 3265 4646 50  0000 L CNN
+F 1 "0.1uF" H 3265 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 4450 50  0001 C CNN
+F 3 "~" H 3150 4600 50  0001 C CNN
+	1    3150 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 631D77AF
+P 1950 4700
+F 0 "D5" H 1950 4800 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 4600 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 4700 50  0001 C CNN
+F 3 "~" H 1950 4700 50  0001 C CNN
+	1    1950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U5
+U 1 1 631D77B9
+P 2550 4600
+F 0 "U5" H 2550 4925 50  0000 C CNN
+F 1 "tlo127" H 2550 4834 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 4300 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 4600 50  0001 L CNN
+	1    2550 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 4700 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 4500 2250 4500
+Wire Wire Line
+	2250 4700 2100 4700
+Wire Wire Line
+	2850 4500 3050 4500
+Wire Wire Line
+	3050 4500 3050 4450
+Wire Wire Line
+	3050 4450 3150 4450
+Wire Wire Line
+	2850 4700 3050 4700
+Wire Wire Line
+	3050 4700 3050 4750
+Wire Wire Line
+	3050 4750 3150 4750
+Text GLabel 1800 4500 0    50   Input ~ 0
+IN19
+Connection ~ 3150 4450
+$Comp
+L Device:R R29
+U 1 1 631D77CE
+P 3150 4300
+F 0 "R29" H 3080 4254 50  0000 R CNN
+F 1 "10K" H 3080 4345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 4300 50  0001 C CNN
+F 3 "~" H 3150 4300 50  0001 C CNN
+	1    3150 4300
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 4150 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 4450 3150 4450
+Text GLabel 4000 4450 2    50   Input ~ 0
+AA19
+$Comp
+L Device:R R6
+U 1 1 631D77DE
+P 1950 5300
+F 0 "R6" V 1743 5300 50  0000 C CNN
+F 1 "20k" V 1834 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 5300 50  0001 C CNN
+F 3 "~" H 1950 5300 50  0001 C CNN
+F 4 "R" H 1950 5300 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 5300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 5300 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 631D77E8
+P 3150 5400
+F 0 "C6" H 3265 5446 50  0000 L CNN
+F 1 "0.1uF" H 3265 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 5250 50  0001 C CNN
+F 3 "~" H 3150 5400 50  0001 C CNN
+	1    3150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 631D77F2
+P 1950 5500
+F 0 "D6" H 1950 5600 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 5400 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 5500 50  0001 C CNN
+F 3 "~" H 1950 5500 50  0001 C CNN
+	1    1950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U6
+U 1 1 631D77FC
+P 2550 5400
+F 0 "U6" H 2550 5725 50  0000 C CNN
+F 1 "tlp127" H 2550 5634 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 5100 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 5400 50  0001 L CNN
+	1    2550 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 5500 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 5300 2250 5300
+Wire Wire Line
+	2250 5500 2100 5500
+Wire Wire Line
+	2850 5300 3050 5300
+Wire Wire Line
+	3050 5300 3050 5250
+Wire Wire Line
+	3050 5250 3150 5250
+Wire Wire Line
+	2850 5500 3050 5500
+Wire Wire Line
+	3050 5500 3050 5550
+Wire Wire Line
+	3050 5550 3150 5550
+Text GLabel 1800 5300 0    50   Input ~ 0
+IN18
+Connection ~ 3150 5250
+$Comp
+L Device:R R30
+U 1 1 631D7811
+P 3150 5100
+F 0 "R30" H 3080 5054 50  0000 R CNN
+F 1 "10K" H 3080 5145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 5100 50  0001 C CNN
+F 3 "~" H 3150 5100 50  0001 C CNN
+	1    3150 5100
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 4950 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 5250 3150 5250
+Text GLabel 4000 5250 2    50   Input ~ 0
+AA18
+$Comp
+L Device:R R7
+U 1 1 631D7821
+P 1950 6100
+F 0 "R7" V 1743 6100 50  0000 C CNN
+F 1 "20k" V 1834 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 6100 50  0001 C CNN
+F 3 "~" H 1950 6100 50  0001 C CNN
+F 4 "R" H 1950 6100 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 6100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 6100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 631D782B
+P 3150 6200
+F 0 "C7" H 3265 6246 50  0000 L CNN
+F 1 "0.1uF" H 3265 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 6050 50  0001 C CNN
+F 3 "~" H 3150 6200 50  0001 C CNN
+	1    3150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 631D7835
+P 1950 6300
+F 0 "D7" H 1950 6400 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 6200 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 6300 50  0001 C CNN
+F 3 "~" H 1950 6300 50  0001 C CNN
+	1    1950 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U7
+U 1 1 631D783F
+P 2550 6200
+F 0 "U7" H 2550 6525 50  0000 C CNN
+F 1 "tlp127" H 2550 6434 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 5900 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 6200 50  0001 L CNN
+	1    2550 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 6300 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 6100 2250 6100
+Wire Wire Line
+	2250 6300 2100 6300
+Wire Wire Line
+	2850 6100 3050 6100
+Wire Wire Line
+	3050 6100 3050 6050
+Wire Wire Line
+	3050 6050 3150 6050
+Wire Wire Line
+	2850 6300 3050 6300
+Wire Wire Line
+	3050 6300 3050 6350
+Wire Wire Line
+	3050 6350 3150 6350
+Text GLabel 1800 6100 0    50   Input ~ 0
+IN17
+Connection ~ 3150 6050
+Text GLabel 3150 5750 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 6050 3150 6050
+Text GLabel 4000 6050 2    50   Input ~ 0
+AA17
+$Comp
+L Device:R R8
+U 1 1 631D7864
+P 1950 6900
+F 0 "R8" V 1743 6900 50  0000 C CNN
+F 1 "20k" V 1834 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 6900 50  0001 C CNN
+F 3 "~" H 1950 6900 50  0001 C CNN
+F 4 "R" H 1950 6900 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 6900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 6900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 631D786E
+P 3150 7000
+F 0 "C8" H 3265 7046 50  0000 L CNN
+F 1 "0.1uF" H 3265 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 6850 50  0001 C CNN
+F 3 "~" H 3150 7000 50  0001 C CNN
+	1    3150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 631D7878
+P 1950 7100
+F 0 "D8" H 1950 7200 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 7000 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 7100 50  0001 C CNN
+F 3 "~" H 1950 7100 50  0001 C CNN
+	1    1950 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U8
+U 1 1 631D7882
+P 2550 7000
+F 0 "U8" H 2550 7325 50  0000 C CNN
+F 1 "tlp127" H 2550 7234 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 6700 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 7000 50  0001 L CNN
+	1    2550 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 7100 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 6900 2250 6900
+Wire Wire Line
+	2250 7100 2100 7100
+Wire Wire Line
+	2850 6900 3050 6900
+Wire Wire Line
+	3050 6900 3050 6850
+Wire Wire Line
+	3050 6850 3150 6850
+Wire Wire Line
+	2850 7100 3050 7100
+Wire Wire Line
+	3050 7100 3050 7150
+Wire Wire Line
+	3050 7150 3150 7150
+Text GLabel 1800 6900 0    50   Input ~ 0
+IN16
+Connection ~ 3150 6850
+$Comp
+L Device:R R32
+U 1 1 631D7897
+P 3150 6700
+F 0 "R32" H 3080 6654 50  0000 R CNN
+F 1 "10K" H 3080 6745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 6700 50  0001 C CNN
+F 3 "~" H 3150 6700 50  0001 C CNN
+	1    3150 6700
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 6550 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 6850 3150 6850
+Text GLabel 4000 6850 2    50   Input ~ 0
+AA16
+$Comp
+L 74xx:74HC14 U9
+U 2 1 631EF762
+P 3700 4450
+F 0 "U9" H 3700 4767 50  0000 C CNN
+F 1 "74HC14" H 3700 4676 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 4450 50  0001 C CNN
+	2    3700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 1 1 631F1465
+P 3700 5250
+F 0 "U9" H 3700 5567 50  0000 C CNN
+F 1 "74HC14" H 3700 5476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 5250 50  0001 C CNN
+	1    3700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U10
+U 5 1 631F3688
+P 3700 6850
+F 0 "U10" H 3700 7167 50  0000 C CNN
+F 1 "74HC14" H 3700 7076 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 6850 50  0001 C CNN
+	5    3700 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 631F5ED8
+P 1950 8450
+F 0 "R9" V 1743 8450 50  0000 C CNN
+F 1 "20k" V 1834 8450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 8450 50  0001 C CNN
+F 3 "~" H 1950 8450 50  0001 C CNN
+F 4 "R" H 1950 8450 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 8450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 8450 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 8450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 631F5EE2
+P 3150 8550
+F 0 "C9" H 3265 8596 50  0000 L CNN
+F 1 "0.1uF" H 3265 8505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 8400 50  0001 C CNN
+F 3 "~" H 3150 8550 50  0001 C CNN
+	1    3150 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 631F5EEC
+P 1950 8650
+F 0 "D9" H 1950 8750 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 8550 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 8650 50  0001 C CNN
+F 3 "~" H 1950 8650 50  0001 C CNN
+	1    1950 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U11
+U 1 1 631F5EF6
+P 2550 8550
+F 0 "U11" H 2550 8875 50  0000 C CNN
+F 1 "tlp127" H 2550 8784 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 8250 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 8550 50  0001 L CNN
+	1    2550 8550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 8650 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 8450 2250 8450
+Wire Wire Line
+	2250 8650 2100 8650
+Wire Wire Line
+	2850 8650 3050 8650
+Wire Wire Line
+	3050 8650 3050 8700
+Wire Wire Line
+	3050 8700 3150 8700
+Text GLabel 1800 8450 0    50   Input ~ 0
+IN15
+Connection ~ 3150 8400
+$Comp
+L Device:R R33
+U 1 1 631F5F0B
+P 3150 8250
+F 0 "R33" H 3080 8204 50  0000 R CNN
+F 1 "10K" H 3080 8295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 8250 50  0001 C CNN
+F 3 "~" H 3150 8250 50  0001 C CNN
+	1    3150 8250
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 8100 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 8400 3150 8400
+Text GLabel 4000 8400 2    50   Input ~ 0
+AA15
+$Comp
+L Device:R R10
+U 1 1 631F5F1B
+P 1950 9250
+F 0 "R10" V 1743 9250 50  0000 C CNN
+F 1 "20k" V 1834 9250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 9250 50  0001 C CNN
+F 3 "~" H 1950 9250 50  0001 C CNN
+F 4 "R" H 1950 9250 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 9250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 9250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 9250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 631F5F25
+P 3150 9350
+F 0 "C10" H 3265 9396 50  0000 L CNN
+F 1 "0.1uF" H 3265 9305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 9200 50  0001 C CNN
+F 3 "~" H 3150 9350 50  0001 C CNN
+	1    3150 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 631F5F2F
+P 1950 9450
+F 0 "D10" H 1950 9550 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 9350 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 9450 50  0001 C CNN
+F 3 "~" H 1950 9450 50  0001 C CNN
+	1    1950 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U12
+U 1 1 631F5F39
+P 2550 9350
+F 0 "U12" H 2550 9675 50  0000 C CNN
+F 1 "tlp127" H 2550 9584 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 9050 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 9350 50  0001 L CNN
+	1    2550 9350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 9450 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 9250 2250 9250
+Wire Wire Line
+	2250 9450 2100 9450
+Wire Wire Line
+	2850 9250 3050 9250
+Wire Wire Line
+	3050 9250 3050 9200
+Wire Wire Line
+	3050 9200 3150 9200
+Wire Wire Line
+	2850 9450 3050 9450
+Wire Wire Line
+	3050 9450 3050 9500
+Wire Wire Line
+	3050 9500 3150 9500
+Text GLabel 1800 9250 0    50   Input ~ 0
+IN14
+Connection ~ 3150 9200
+$Comp
+L Device:R R34
+U 1 1 631F5F4E
+P 3150 9050
+F 0 "R34" H 3080 9004 50  0000 R CNN
+F 1 "10K" H 3080 9095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 9050 50  0001 C CNN
+F 3 "~" H 3150 9050 50  0001 C CNN
+	1    3150 9050
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 8900 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 9200 3150 9200
+Text GLabel 4000 9200 2    50   Input ~ 0
+AA14
+$Comp
+L 74xx:74HC14 U10
+U 4 1 631F5F5B
+P 3700 8400
+F 0 "U10" H 3700 8717 50  0000 C CNN
+F 1 "74HC14" H 3700 8626 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 8400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 8400 50  0001 C CNN
+	4    3700 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U10
+U 3 1 631F5F65
+P 3700 9200
+F 0 "U10" H 3700 9517 50  0000 C CNN
+F 1 "74HC14" H 3700 9426 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 9200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 9200 50  0001 C CNN
+	3    3700 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 631F5F72
+P 1950 10100
+F 0 "R11" V 1743 10100 50  0000 C CNN
+F 1 "20k" V 1834 10100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 10100 50  0001 C CNN
+F 3 "~" H 1950 10100 50  0001 C CNN
+F 4 "R" H 1950 10100 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 10100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 10100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 10100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 631F5F7C
+P 3150 10200
+F 0 "C11" H 3265 10246 50  0000 L CNN
+F 1 "0.1uF" H 3265 10155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 10050 50  0001 C CNN
+F 3 "~" H 3150 10200 50  0001 C CNN
+	1    3150 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 631F5F86
+P 1950 10300
+F 0 "D11" H 1950 10400 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 10200 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 10300 50  0001 C CNN
+F 3 "~" H 1950 10300 50  0001 C CNN
+	1    1950 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U13
+U 1 1 631F5F90
+P 2550 10200
+F 0 "U13" H 2550 10525 50  0000 C CNN
+F 1 "tlp127" H 2550 10434 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 9900 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 10200 50  0001 L CNN
+	1    2550 10200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 10300 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 10100 2250 10100
+Wire Wire Line
+	2250 10300 2100 10300
+Wire Wire Line
+	2850 10100 3050 10100
+Wire Wire Line
+	3050 10100 3050 10050
+Wire Wire Line
+	3050 10050 3150 10050
+Wire Wire Line
+	2850 10300 3050 10300
+Wire Wire Line
+	3050 10300 3050 10350
+Wire Wire Line
+	3050 10350 3150 10350
+Text GLabel 1800 10100 0    50   Input ~ 0
+IN13
+Connection ~ 3150 10050
+$Comp
+L Device:R R35
+U 1 1 631F5FA5
+P 3150 9900
+F 0 "R35" H 3080 9854 50  0000 R CNN
+F 1 "10K" H 3080 9945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 9900 50  0001 C CNN
+F 3 "~" H 3150 9900 50  0001 C CNN
+	1    3150 9900
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 9750 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 10050 3150 10050
+Text GLabel 4000 10050 2    50   Input ~ 0
+AA13
+$Comp
+L Device:R R12
+U 1 1 631F5FB5
+P 1950 10900
+F 0 "R12" V 1743 10900 50  0000 C CNN
+F 1 "20k" V 1834 10900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 10900 50  0001 C CNN
+F 3 "~" H 1950 10900 50  0001 C CNN
+F 4 "R" H 1950 10900 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 10900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 10900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 10900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 631F5FBF
+P 3150 11000
+F 0 "C12" H 3265 11046 50  0000 L CNN
+F 1 "0.1uF" H 3265 10955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 10850 50  0001 C CNN
+F 3 "~" H 3150 11000 50  0001 C CNN
+	1    3150 11000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 631F5FC9
+P 1950 11100
+F 0 "D12" H 1950 11200 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 11000 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 11100 50  0001 C CNN
+F 3 "~" H 1950 11100 50  0001 C CNN
+	1    1950 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U14
+U 1 1 631F5FD3
+P 2550 11000
+F 0 "U14" H 2550 11325 50  0000 C CNN
+F 1 "tlp127" H 2550 11234 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 10700 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 11000 50  0001 L CNN
+	1    2550 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 11100 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 10900 2250 10900
+Wire Wire Line
+	2250 11100 2100 11100
+Wire Wire Line
+	2850 10900 3050 10900
+Wire Wire Line
+	3050 10900 3050 10850
+Wire Wire Line
+	3050 10850 3150 10850
+Wire Wire Line
+	2850 11100 3050 11100
+Wire Wire Line
+	3050 11100 3050 11150
+Wire Wire Line
+	3050 11150 3150 11150
+Text GLabel 1800 10900 0    50   Input ~ 0
+IN12
+Connection ~ 3150 10850
+$Comp
+L Device:R R36
+U 1 1 631F5FE8
+P 3150 10700
+F 0 "R36" H 3080 10654 50  0000 R CNN
+F 1 "10K" H 3080 10745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 10700 50  0001 C CNN
+F 3 "~" H 3150 10700 50  0001 C CNN
+	1    3150 10700
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 10550 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 10850 3150 10850
+Text GLabel 4000 10850 2    50   Input ~ 0
+AA12
+$Comp
+L Device:R R13
+U 1 1 631F5FF8
+P 1950 11700
+F 0 "R13" V 1743 11700 50  0000 C CNN
+F 1 "20k" V 1834 11700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 11700 50  0001 C CNN
+F 3 "~" H 1950 11700 50  0001 C CNN
+F 4 "R" H 1950 11700 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 11700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 11700 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 11700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 631F6002
+P 3150 11800
+F 0 "C13" H 3265 11846 50  0000 L CNN
+F 1 "0.1uF" H 3265 11755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 11650 50  0001 C CNN
+F 3 "~" H 3150 11800 50  0001 C CNN
+	1    3150 11800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 631F600C
+P 1950 11900
+F 0 "D13" H 1950 12000 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 11800 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 11900 50  0001 C CNN
+F 3 "~" H 1950 11900 50  0001 C CNN
+	1    1950 11900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U15
+U 1 1 631F6016
+P 2550 11800
+F 0 "U15" H 2550 12125 50  0000 C CNN
+F 1 "tlp127" H 2550 12034 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 11500 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 11800 50  0001 L CNN
+	1    2550 11800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 11900 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 11700 2250 11700
+Wire Wire Line
+	2250 11900 2100 11900
+Wire Wire Line
+	2850 11700 3050 11700
+Wire Wire Line
+	3050 11700 3050 11650
+Wire Wire Line
+	3050 11650 3150 11650
+Wire Wire Line
+	2850 11900 3050 11900
+Wire Wire Line
+	3050 11900 3050 11950
+Wire Wire Line
+	3050 11950 3150 11950
+Text GLabel 1800 11700 0    50   Input ~ 0
+IN11
+Connection ~ 3150 11650
+$Comp
+L Device:R R37
+U 1 1 631F602B
+P 3150 11500
+F 0 "R37" H 3080 11454 50  0000 R CNN
+F 1 "10K" H 3080 11545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 11500 50  0001 C CNN
+F 3 "~" H 3150 11500 50  0001 C CNN
+	1    3150 11500
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 11350 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 11650 3150 11650
+Text GLabel 4000 11650 2    50   Input ~ 0
+AA11
+$Comp
+L Device:R R14
+U 1 1 631F603B
+P 1950 12500
+F 0 "R14" V 1743 12500 50  0000 C CNN
+F 1 "20k" V 1834 12500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 12500 50  0001 C CNN
+F 3 "~" H 1950 12500 50  0001 C CNN
+F 4 "R" H 1950 12500 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 12500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 12500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 12500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 631F6045
+P 3150 12600
+F 0 "C14" H 3265 12646 50  0000 L CNN
+F 1 "0.1uF" H 3265 12555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 12450 50  0001 C CNN
+F 3 "~" H 3150 12600 50  0001 C CNN
+	1    3150 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 631F604F
+P 1950 12700
+F 0 "D14" H 1950 12800 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 12600 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 12700 50  0001 C CNN
+F 3 "~" H 1950 12700 50  0001 C CNN
+	1    1950 12700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U16
+U 1 1 631F6059
+P 2550 12600
+F 0 "U16" H 2550 12925 50  0000 C CNN
+F 1 "tlp127" H 2550 12834 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 12300 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 12600 50  0001 L CNN
+	1    2550 12600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 12700 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 12500 2250 12500
+Wire Wire Line
+	2250 12700 2100 12700
+Wire Wire Line
+	2850 12500 3050 12500
+Wire Wire Line
+	3050 12500 3050 12450
+Wire Wire Line
+	3050 12450 3150 12450
+Wire Wire Line
+	2850 12700 3050 12700
+Wire Wire Line
+	3050 12700 3050 12750
+Wire Wire Line
+	3050 12750 3150 12750
+Text GLabel 1800 12500 0    50   Input ~ 0
+IN10
+Connection ~ 3150 12450
+$Comp
+L Device:R R38
+U 1 1 631F606E
+P 3150 12300
+F 0 "R38" H 3080 12254 50  0000 R CNN
+F 1 "10K" H 3080 12345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 12300 50  0001 C CNN
+F 3 "~" H 3150 12300 50  0001 C CNN
+	1    3150 12300
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 12150 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 12450 3150 12450
+Text GLabel 4000 12450 2    50   Input ~ 0
+AA10
+$Comp
+L 74xx:74HC14 U10
+U 2 1 631F607B
+P 3700 10050
+F 0 "U10" H 3700 10367 50  0000 C CNN
+F 1 "74HC14" H 3700 10276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 10050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 10050 50  0001 C CNN
+	2    3700 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U10
+U 1 1 631F6085
+P 3700 10850
+F 0 "U10" H 3700 11167 50  0000 C CNN
+F 1 "74HC14" H 3700 11076 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 10850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 10850 50  0001 C CNN
+	1    3700 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U27
+U 6 1 631F608F
+P 3700 11650
+F 0 "U27" H 3700 11967 50  0000 C CNN
+F 1 "74HC14" H 3700 11876 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 11650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 11650 50  0001 C CNN
+	6    3700 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U27
+U 5 1 631F6099
+P 3700 12450
+F 0 "U27" H 3700 12767 50  0000 C CNN
+F 1 "74HC14" H 3700 12676 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 12450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 12450 50  0001 C CNN
+	5    3700 12450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 6329E655
+P 1950 13300
+F 0 "R15" V 1743 13300 50  0000 C CNN
+F 1 "20k" V 1834 13300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 13300 50  0001 C CNN
+F 3 "~" H 1950 13300 50  0001 C CNN
+F 4 "R" H 1950 13300 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 13300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 13300 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 13300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 6329E65F
+P 3150 13400
+F 0 "C15" H 3265 13446 50  0000 L CNN
+F 1 "0.1uF" H 3265 13355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 13250 50  0001 C CNN
+F 3 "~" H 3150 13400 50  0001 C CNN
+	1    3150 13400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D15
+U 1 1 6329E669
+P 1950 13500
+F 0 "D15" H 1950 13600 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 13400 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 13500 50  0001 C CNN
+F 3 "~" H 1950 13500 50  0001 C CNN
+	1    1950 13500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U17
+U 1 1 6329E673
+P 2550 13400
+F 0 "U17" H 2550 13725 50  0000 C CNN
+F 1 "tlp127" H 2550 13634 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 13100 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 13400 50  0001 L CNN
+	1    2550 13400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 13500 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 13300 2250 13300
+Wire Wire Line
+	2250 13500 2100 13500
+Wire Wire Line
+	2850 13500 3050 13500
+Wire Wire Line
+	3050 13500 3050 13550
+Wire Wire Line
+	3050 13550 3150 13550
+Text GLabel 1800 13300 0    50   Input ~ 0
+IN9
+Connection ~ 3150 13250
+$Comp
+L Device:R R39
+U 1 1 6329E688
+P 3150 13100
+F 0 "R39" H 3080 13054 50  0000 R CNN
+F 1 "10K" H 3080 13145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 13100 50  0001 C CNN
+F 3 "~" H 3150 13100 50  0001 C CNN
+	1    3150 13100
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 12950 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 13250 3150 13250
+Text GLabel 4000 13250 2    50   Input ~ 0
+AA9
+$Comp
+L Device:R R16
+U 1 1 6329E698
+P 1950 14100
+F 0 "R16" V 1743 14100 50  0000 C CNN
+F 1 "20k" V 1834 14100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 14100 50  0001 C CNN
+F 3 "~" H 1950 14100 50  0001 C CNN
+F 4 "R" H 1950 14100 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 14100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 14100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 14100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 6329E6A2
+P 3150 14200
+F 0 "C16" H 3265 14246 50  0000 L CNN
+F 1 "0.1uF" H 3265 14155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 14050 50  0001 C CNN
+F 3 "~" H 3150 14200 50  0001 C CNN
+	1    3150 14200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D16
+U 1 1 6329E6AC
+P 1950 14300
+F 0 "D16" H 1950 14400 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 14200 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 14300 50  0001 C CNN
+F 3 "~" H 1950 14300 50  0001 C CNN
+	1    1950 14300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U18
+U 1 1 6329E6B6
+P 2550 14200
+F 0 "U18" H 2550 14525 50  0000 C CNN
+F 1 "tlp127" H 2550 14434 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 13900 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 14200 50  0001 L CNN
+	1    2550 14200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 14300 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 14100 2250 14100
+Wire Wire Line
+	2250 14300 2100 14300
+Wire Wire Line
+	2850 14100 3050 14100
+Wire Wire Line
+	3050 14100 3050 14050
+Wire Wire Line
+	3050 14050 3150 14050
+Wire Wire Line
+	2850 14300 3050 14300
+Wire Wire Line
+	3050 14300 3050 14350
+Wire Wire Line
+	3050 14350 3150 14350
+Text GLabel 1800 14100 0    50   Input ~ 0
+IN8
+Connection ~ 3150 14050
+$Comp
+L Device:R R40
+U 1 1 6329E6CB
+P 3150 13900
+F 0 "R40" H 3080 13854 50  0000 R CNN
+F 1 "10K" H 3080 13945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 13900 50  0001 C CNN
+F 3 "~" H 3150 13900 50  0001 C CNN
+	1    3150 13900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 14050 3150 14050
+Text GLabel 4000 14050 2    50   Input ~ 0
+AA8
+$Comp
+L 74xx:74HC14 U27
+U 4 1 6329E6D8
+P 3700 13250
+F 0 "U27" H 3700 13567 50  0000 C CNN
+F 1 "74HC14" H 3700 13476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 13250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 13250 50  0001 C CNN
+	4    3700 13250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U27
+U 3 1 6329E6E2
+P 3700 14050
+F 0 "U27" H 3700 14367 50  0000 C CNN
+F 1 "74HC14" H 3700 14276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 14050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 14050 50  0001 C CNN
+	3    3700 14050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 6329E6EF
+P 1950 15500
+F 0 "R17" V 1743 15500 50  0000 C CNN
+F 1 "20k" V 1834 15500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 15500 50  0001 C CNN
+F 3 "~" H 1950 15500 50  0001 C CNN
+F 4 "R" H 1950 15500 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 15500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 15500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 15500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 6329E6F9
+P 3150 15600
+F 0 "C17" H 3265 15646 50  0000 L CNN
+F 1 "0.1uF" H 3265 15555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 15450 50  0001 C CNN
+F 3 "~" H 3150 15600 50  0001 C CNN
+	1    3150 15600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D17
+U 1 1 6329E703
+P 1950 15700
+F 0 "D17" H 1950 15800 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 15600 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 15700 50  0001 C CNN
+F 3 "~" H 1950 15700 50  0001 C CNN
+	1    1950 15700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U19
+U 1 1 6329E70D
+P 2550 15600
+F 0 "U19" H 2550 15925 50  0000 C CNN
+F 1 "tlp127" H 2550 15834 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 15300 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 15600 50  0001 L CNN
+	1    2550 15600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 15700 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 15500 2250 15500
+Wire Wire Line
+	2250 15700 2100 15700
+Wire Wire Line
+	2850 15500 3050 15500
+Wire Wire Line
+	3050 15500 3050 15450
+Wire Wire Line
+	3050 15450 3150 15450
+Wire Wire Line
+	2850 15700 3050 15700
+Wire Wire Line
+	3050 15700 3050 15750
+Wire Wire Line
+	3050 15750 3150 15750
+Text GLabel 1800 15500 0    50   Input ~ 0
+IN7
+Connection ~ 3150 15450
+$Comp
+L Device:R R41
+U 1 1 6329E722
+P 3150 15300
+F 0 "R41" H 3080 15254 50  0000 R CNN
+F 1 "10K" H 3080 15345 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 15300 50  0001 C CNN
+F 3 "~" H 3150 15300 50  0001 C CNN
+	1    3150 15300
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 15150 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 15450 3150 15450
+Text GLabel 4000 15450 2    50   Input ~ 0
+AA7
+$Comp
+L Device:R R18
+U 1 1 6329E732
+P 1950 16300
+F 0 "R18" V 1743 16300 50  0000 C CNN
+F 1 "20k" V 1834 16300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 16300 50  0001 C CNN
+F 3 "~" H 1950 16300 50  0001 C CNN
+F 4 "R" H 1950 16300 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 16300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 16300 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 16300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 6329E73C
+P 3150 16400
+F 0 "C18" H 3265 16446 50  0000 L CNN
+F 1 "0.1uF" H 3265 16355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 16250 50  0001 C CNN
+F 3 "~" H 3150 16400 50  0001 C CNN
+	1    3150 16400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D18
+U 1 1 6329E746
+P 1950 16500
+F 0 "D18" H 1950 16600 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 16400 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 16500 50  0001 C CNN
+F 3 "~" H 1950 16500 50  0001 C CNN
+	1    1950 16500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP127 U20
+U 1 1 6329E750
+P 2550 16400
+F 0 "U20" H 2550 16725 50  0000 C CNN
+F 1 "tlp127" H 2550 16634 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 16100 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 16400 50  0001 L CNN
+	1    2550 16400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 16500 0    50   Input ~ 0
+1M
+Wire Wire Line
+	2100 16300 2250 16300
+Wire Wire Line
+	2250 16500 2100 16500
+Wire Wire Line
+	2850 16300 3050 16300
+Wire Wire Line
+	3050 16300 3050 16250
+Wire Wire Line
+	3050 16250 3150 16250
+Wire Wire Line
+	2850 16500 3050 16500
+Wire Wire Line
+	3050 16500 3050 16550
+Wire Wire Line
+	3050 16550 3150 16550
+Text GLabel 1800 16300 0    50   Input ~ 0
+IN6
+Connection ~ 3150 16250
+$Comp
+L Device:R R42
+U 1 1 6329E765
+P 3150 16100
+F 0 "R42" H 3080 16054 50  0000 R CNN
+F 1 "10K" H 3080 16145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 16100 50  0001 C CNN
+F 3 "~" H 3150 16100 50  0001 C CNN
+	1    3150 16100
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 15950 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3400 16250 3150 16250
+Text GLabel 4000 16250 2    50   Input ~ 0
+AA6
+$Comp
+L 74xx:74HC14 U27
+U 2 1 6329E773
+P 3700 15450
+F 0 "U27" H 3700 15767 50  0000 C CNN
+F 1 "74HC14" H 3700 15676 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 15450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 15450 50  0001 C CNN
+	2    3700 15450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U27
+U 1 1 6329E77D
+P 3700 16250
+F 0 "U27" H 3700 16567 50  0000 C CNN
+F 1 "74HC14" H 3700 16476 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 16250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 16250 50  0001 C CNN
+	1    3700 16250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 13750 1    50   Input ~ 0
+5V
+$Comp
+L 74xx:74HC14 U28
+U 1 1 63396482
+P 3700 21150
+F 0 "U28" H 3700 21467 50  0000 C CNN
+F 1 "74HC14" H 3700 21376 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 21150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 21150 50  0001 C CNN
+	1    3700 21150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U28
+U 2 1 63396478
+P 3700 20350
+F 0 "U28" H 3700 20667 50  0000 C CNN
+F 1 "74HC14" H 3700 20576 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 20350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 20350 50  0001 C CNN
+	2    3700 20350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 21150 2    50   Input ~ 0
+AA0
+Wire Wire Line
+	3400 21150 3150 21150
+Text GLabel 3150 20850 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R48
+U 1 1 6339646B
+P 3150 21000
+F 0 "R48" H 3080 20954 50  0000 R CNN
+F 1 "10K" H 3080 21045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 21000 50  0001 C CNN
+F 3 "~" H 3150 21000 50  0001 C CNN
+	1    3150 21000
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 21150
+Text GLabel 1800 21200 0    50   Input ~ 0
+IN0
+Wire Wire Line
+	3050 21450 3150 21450
+Wire Wire Line
+	3050 21400 3050 21450
+Wire Wire Line
+	2850 21400 3050 21400
+Wire Wire Line
+	3050 21150 3150 21150
+Wire Wire Line
+	3050 21200 3050 21150
+Wire Wire Line
+	2850 21200 3050 21200
+Wire Wire Line
+	2250 21400 2100 21400
+Wire Wire Line
+	2100 21200 2250 21200
+Text GLabel 1800 21400 0    50   Input ~ 0
+1M
+$Comp
+L Isolator:TLP127 U26
+U 1 1 63396456
+P 2550 21300
+F 0 "U26" H 2550 21625 50  0000 C CNN
+F 1 "tlp127" H 2550 21534 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 21000 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 21300 50  0001 L CNN
+	1    2550 21300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D24
+U 1 1 6339644C
+P 1950 21400
+F 0 "D24" H 1950 21500 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 21300 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 21400 50  0001 C CNN
+F 3 "~" H 1950 21400 50  0001 C CNN
+	1    1950 21400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 63396442
+P 3150 21300
+F 0 "C24" H 3265 21346 50  0000 L CNN
+F 1 "0.1uF" H 3265 21255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 21150 50  0001 C CNN
+F 3 "~" H 3150 21300 50  0001 C CNN
+	1    3150 21300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 63396438
+P 1950 21200
+F 0 "R24" V 1743 21200 50  0000 C CNN
+F 1 "20k" V 1834 21200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 21200 50  0001 C CNN
+F 3 "~" H 1950 21200 50  0001 C CNN
+F 4 "R" H 1950 21200 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 21200 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 21200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 21200
+	0    1    1    0   
+$EndComp
+Text GLabel 4000 20350 2    50   Input ~ 0
+AA1
+Wire Wire Line
+	3400 20350 3150 20350
+Text GLabel 3150 20050 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R47
+U 1 1 63396428
+P 3150 20200
+F 0 "R47" H 3080 20154 50  0000 R CNN
+F 1 "10K" H 3080 20245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 20200 50  0001 C CNN
+F 3 "~" H 3150 20200 50  0001 C CNN
+	1    3150 20200
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 20350
+Text GLabel 1800 20400 0    50   Input ~ 0
+IN1
+Wire Wire Line
+	3050 20650 3150 20650
+Wire Wire Line
+	3050 20600 3050 20650
+Wire Wire Line
+	2850 20600 3050 20600
+Wire Wire Line
+	3050 20350 3150 20350
+Wire Wire Line
+	3050 20400 3050 20350
+Wire Wire Line
+	2850 20400 3050 20400
+Wire Wire Line
+	2250 20600 2100 20600
+Wire Wire Line
+	2100 20400 2250 20400
+Text GLabel 1800 20600 0    50   Input ~ 0
+1M
+$Comp
+L Isolator:TLP127 U25
+U 1 1 63396413
+P 2550 20500
+F 0 "U25" H 2550 20825 50  0000 C CNN
+F 1 "tlp127" H 2550 20734 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 20200 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 20500 50  0001 L CNN
+	1    2550 20500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D23
+U 1 1 63396409
+P 1950 20600
+F 0 "D23" H 1950 20700 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 20500 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 20600 50  0001 C CNN
+F 3 "~" H 1950 20600 50  0001 C CNN
+	1    1950 20600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 633963FF
+P 3150 20500
+F 0 "C23" H 3265 20546 50  0000 L CNN
+F 1 "0.1uF" H 3265 20455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 20350 50  0001 C CNN
+F 3 "~" H 3150 20500 50  0001 C CNN
+	1    3150 20500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 633963F5
+P 1950 20400
+F 0 "R23" V 1743 20400 50  0000 C CNN
+F 1 "20k" V 1834 20400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 20400 50  0001 C CNN
+F 3 "~" H 1950 20400 50  0001 C CNN
+F 4 "R" H 1950 20400 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 20400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 20400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 20400
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74HC14 U28
+U 3 1 633963E8
+P 3700 19500
+F 0 "U28" H 3700 19817 50  0000 C CNN
+F 1 "74HC14" H 3700 19726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 19500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 19500 50  0001 C CNN
+	3    3700 19500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U28
+U 4 1 633963DE
+P 3700 18700
+F 0 "U28" H 3700 19017 50  0000 C CNN
+F 1 "74HC14" H 3700 18926 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 18700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 18700 50  0001 C CNN
+	4    3700 18700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U28
+U 5 1 633963D4
+P 3700 17900
+F 0 "U28" H 3700 18217 50  0000 C CNN
+F 1 "74HC14" H 3700 18126 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 17900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 17900 50  0001 C CNN
+	5    3700 17900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U28
+U 6 1 633963CA
+P 3700 17100
+F 0 "U28" H 3700 17417 50  0000 C CNN
+F 1 "74HC14" H 3700 17326 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 17100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 17100 50  0001 C CNN
+	6    3700 17100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 19500 2    50   Input ~ 0
+AA2
+Wire Wire Line
+	3400 19500 3150 19500
+Text GLabel 3150 19200 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R46
+U 1 1 633963BD
+P 3150 19350
+F 0 "R46" H 3080 19304 50  0000 R CNN
+F 1 "10K" H 3080 19395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 19350 50  0001 C CNN
+F 3 "~" H 3150 19350 50  0001 C CNN
+	1    3150 19350
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 19500
+Text GLabel 1800 19550 0    50   Input ~ 0
+IN2
+Wire Wire Line
+	3050 19800 3150 19800
+Wire Wire Line
+	3050 19750 3050 19800
+Wire Wire Line
+	2850 19750 3050 19750
+Wire Wire Line
+	3050 19500 3150 19500
+Wire Wire Line
+	3050 19550 3050 19500
+Wire Wire Line
+	2850 19550 3050 19550
+Wire Wire Line
+	2250 19750 2100 19750
+Wire Wire Line
+	2100 19550 2250 19550
+Text GLabel 1800 19750 0    50   Input ~ 0
+1M
+$Comp
+L Isolator:TLP127 U24
+U 1 1 633963A8
+P 2550 19650
+F 0 "U24" H 2550 19975 50  0000 C CNN
+F 1 "tlp127" H 2550 19884 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 19350 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 19650 50  0001 L CNN
+	1    2550 19650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D22
+U 1 1 6339639E
+P 1950 19750
+F 0 "D22" H 1950 19850 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 19650 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 19750 50  0001 C CNN
+F 3 "~" H 1950 19750 50  0001 C CNN
+	1    1950 19750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 63396394
+P 3150 19650
+F 0 "C22" H 3265 19696 50  0000 L CNN
+F 1 "0.1uF" H 3265 19605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 19500 50  0001 C CNN
+F 3 "~" H 3150 19650 50  0001 C CNN
+	1    3150 19650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 6339638A
+P 1950 19550
+F 0 "R22" V 1743 19550 50  0000 C CNN
+F 1 "20k" V 1834 19550 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 19550 50  0001 C CNN
+F 3 "~" H 1950 19550 50  0001 C CNN
+F 4 "R" H 1950 19550 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 19550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 19550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 19550
+	0    1    1    0   
+$EndComp
+Text GLabel 4000 18700 2    50   Input ~ 0
+AA3
+Wire Wire Line
+	3400 18700 3150 18700
+Text GLabel 3150 18400 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R45
+U 1 1 6339637A
+P 3150 18550
+F 0 "R45" H 3080 18504 50  0000 R CNN
+F 1 "10K" H 3080 18595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 18550 50  0001 C CNN
+F 3 "~" H 3150 18550 50  0001 C CNN
+	1    3150 18550
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 18700
+Text GLabel 1800 18750 0    50   Input ~ 0
+IN3
+Wire Wire Line
+	3050 19000 3150 19000
+Wire Wire Line
+	3050 18950 3050 19000
+Wire Wire Line
+	2850 18950 3050 18950
+Wire Wire Line
+	3050 18700 3150 18700
+Wire Wire Line
+	3050 18750 3050 18700
+Wire Wire Line
+	2850 18750 3050 18750
+Wire Wire Line
+	2250 18950 2100 18950
+Wire Wire Line
+	2100 18750 2250 18750
+Text GLabel 1800 18950 0    50   Input ~ 0
+1M
+$Comp
+L Isolator:TLP127 U23
+U 1 1 63396365
+P 2550 18850
+F 0 "U23" H 2550 19175 50  0000 C CNN
+F 1 "tlp127" H 2550 19084 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 18550 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 18850 50  0001 L CNN
+	1    2550 18850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D21
+U 1 1 6339635B
+P 1950 18950
+F 0 "D21" H 1950 19050 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 18850 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 18950 50  0001 C CNN
+F 3 "~" H 1950 18950 50  0001 C CNN
+	1    1950 18950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 63396351
+P 3150 18850
+F 0 "C21" H 3265 18896 50  0000 L CNN
+F 1 "0.1uF" H 3265 18805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 18700 50  0001 C CNN
+F 3 "~" H 3150 18850 50  0001 C CNN
+	1    3150 18850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 63396347
+P 1950 18750
+F 0 "R21" V 1743 18750 50  0000 C CNN
+F 1 "20k" V 1834 18750 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 18750 50  0001 C CNN
+F 3 "~" H 1950 18750 50  0001 C CNN
+F 4 "R" H 1950 18750 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 18750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 18750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 18750
+	0    1    1    0   
+$EndComp
+Text GLabel 4000 17900 2    50   Input ~ 0
+AA4
+Wire Wire Line
+	3400 17900 3150 17900
+Text GLabel 3150 17600 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R44
+U 1 1 63396337
+P 3150 17750
+F 0 "R44" H 3080 17704 50  0000 R CNN
+F 1 "10K" H 3080 17795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 17750 50  0001 C CNN
+F 3 "~" H 3150 17750 50  0001 C CNN
+	1    3150 17750
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 17900
+Text GLabel 1800 17950 0    50   Input ~ 0
+IN4
+Wire Wire Line
+	3050 18200 3150 18200
+Wire Wire Line
+	3050 18150 3050 18200
+Wire Wire Line
+	2850 18150 3050 18150
+Wire Wire Line
+	3050 17900 3150 17900
+Wire Wire Line
+	3050 17950 3050 17900
+Wire Wire Line
+	2850 17950 3050 17950
+Wire Wire Line
+	2250 18150 2100 18150
+Wire Wire Line
+	2100 17950 2250 17950
+Text GLabel 1800 18150 0    50   Input ~ 0
+1M
+$Comp
+L Isolator:TLP127 U22
+U 1 1 63396322
+P 2550 18050
+F 0 "U22" H 2550 18375 50  0000 C CNN
+F 1 "TLP127" H 2550 18284 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 17750 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 18050 50  0001 L CNN
+	1    2550 18050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D20
+U 1 1 63396318
+P 1950 18150
+F 0 "D20" H 1950 18250 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 18050 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 18150 50  0001 C CNN
+F 3 "~" H 1950 18150 50  0001 C CNN
+	1    1950 18150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 6339630E
+P 3150 18050
+F 0 "C20" H 3265 18096 50  0000 L CNN
+F 1 "0.1uF" H 3265 18005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 17900 50  0001 C CNN
+F 3 "~" H 3150 18050 50  0001 C CNN
+	1    3150 18050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 63396304
+P 1950 17950
+F 0 "R20" V 1743 17950 50  0000 C CNN
+F 1 "20k" V 1834 17950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 17950 50  0001 C CNN
+F 3 "~" H 1950 17950 50  0001 C CNN
+F 4 "R" H 1950 17950 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 17950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 17950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 17950
+	0    1    1    0   
+$EndComp
+Text GLabel 4000 17100 2    50   Input ~ 0
+AA5
+Wire Wire Line
+	3400 17100 3150 17100
+Text GLabel 3150 16800 1    50   Input ~ 0
+5V
+$Comp
+L Device:R R43
+U 1 1 633962F4
+P 3150 16950
+F 0 "R43" H 3080 16904 50  0000 R CNN
+F 1 "10K" H 3080 16995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 16950 50  0001 C CNN
+F 3 "~" H 3150 16950 50  0001 C CNN
+	1    3150 16950
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 17100
+Text GLabel 1800 17150 0    50   Input ~ 0
+IN5
+Wire Wire Line
+	3050 17400 3150 17400
+Wire Wire Line
+	3050 17350 3050 17400
+Wire Wire Line
+	2850 17350 3050 17350
+Wire Wire Line
+	3050 17100 3150 17100
+Wire Wire Line
+	3050 17150 3050 17100
+Wire Wire Line
+	2850 17150 3050 17150
+Wire Wire Line
+	2250 17350 2100 17350
+Wire Wire Line
+	2100 17150 2250 17150
+Text GLabel 1800 17350 0    50   Input ~ 0
+1M
+$Comp
+L Isolator:TLP127 U21
+U 1 1 633962DF
+P 2550 17250
+F 0 "U21" H 2550 17575 50  0000 C CNN
+F 1 "TLP127" H 2550 17484 50  0000 C CNN
+F 2 "Package_SO:MFSOP6-4_4.4x3.6mm_P1.27mm" H 2550 16950 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=16902&prodName=TLP127" H 2480 17250 50  0001 L CNN
+	1    2550 17250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D19
+U 1 1 633962D5
+P 1950 17350
+F 0 "D19" H 1950 17450 50  0000 C CNN
+F 1 "GREEN-LED" H 1950 17250 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Castellated" H 1950 17350 50  0001 C CNN
+F 3 "~" H 1950 17350 50  0001 C CNN
+	1    1950 17350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 633962CB
+P 3150 17250
+F 0 "C19" H 3265 17296 50  0000 L CNN
+F 1 "0.1uF" H 3265 17205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 17100 50  0001 C CNN
+F 3 "~" H 3150 17250 50  0001 C CNN
+	1    3150 17250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 633962C1
+P 1950 17150
+F 0 "R19" V 1743 17150 50  0000 C CNN
+F 1 "20k" V 1834 17150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1880 17150 50  0001 C CNN
+F 3 "~" H 1950 17150 50  0001 C CNN
+F 4 "R" H 1950 17150 50  0001 C CNN "Spice_Primitive"
+F 5 "20k" H 1950 17150 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1950 17150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1950 17150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR0101
+U 1 1 63564C89
+P 1050 1850
+F 0 "#PWR0101" H 1050 1700 50  0001 C CNN
+F 1 "+24V" V 1065 1978 50  0000 L CNN
+F 2 "" H 1050 1850 50  0001 C CNN
+F 3 "" H 1050 1850 50  0001 C CNN
+	1    1050 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6356644C
+P 1050 1950
+F 0 "#PWR0102" H 1050 1700 50  0001 C CNN
+F 1 "GND" V 1055 1822 50  0000 R CNN
+F 2 "" H 1050 1950 50  0001 C CNN
+F 3 "" H 1050 1950 50  0001 C CNN
+	1    1050 1950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1100 19050 2    50   Input ~ 0
+1M
+Wire Wire Line
+	2850 8450 3050 8450
+Wire Wire Line
+	3050 8450 3050 8400
+Wire Wire Line
+	3050 8400 3150 8400
+$Comp
+L teensy:Teensy3.5_All_Pins U29
+U 1 1 6381B4F0
+P 9250 10550
+F 0 "U29" H 9250 13293 60  0000 C CNN
+F 1 "Teensy3.5_All_Pins" H 9250 13187 60  0000 C CNN
+F 2 "teensy:Teensy35_36_All_Pins" H 9250 13081 60  0000 C CNN
+F 3 "https://www.pjrc.com/teensy/card8a_rev2.pdf" H 9250 34400 60  0001 C CNN
+F 4 "https://www.pjrc.com/teensy/pinout.html" H 8100 20550 50  0001 C CNN "Pinouts"
+	1    9250 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 63992F60
+P 8100 8400
+F 0 "#PWR0103" H 8100 8150 50  0001 C CNN
+F 1 "GND" V 8105 8272 50  0000 R CNN
+F 2 "" H 8100 8400 50  0001 C CNN
+F 3 "" H 8100 8400 50  0001 C CNN
+	1    8100 8400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 639A286F
+P 10400 9600
+F 0 "#PWR0104" H 10400 9350 50  0001 C CNN
+F 1 "GND" V 10405 9472 50  0000 R CNN
+F 2 "" H 10400 9600 50  0001 C CNN
+F 3 "" H 10400 9600 50  0001 C CNN
+	1    10400 9600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 639A3350
+P 10400 10800
+F 0 "#PWR0105" H 10400 10550 50  0001 C CNN
+F 1 "GND" V 10405 10672 50  0000 R CNN
+F 2 "" H 10400 10800 50  0001 C CNN
+F 3 "" H 10400 10800 50  0001 C CNN
+	1    10400 10800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 639A6041
+P 10400 10900
+F 0 "#PWR0106" H 10400 10650 50  0001 C CNN
+F 1 "GND" V 10405 10772 50  0000 R CNN
+F 2 "" H 10400 10900 50  0001 C CNN
+F 3 "" H 10400 10900 50  0001 C CNN
+	1    10400 10900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 639C10CD
+P 8100 12200
+F 0 "#PWR0107" H 8100 11950 50  0001 C CNN
+F 1 "GND" V 8105 12072 50  0000 R CNN
+F 2 "" H 8100 12200 50  0001 C CNN
+F 3 "" H 8100 12200 50  0001 C CNN
+	1    8100 12200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 639DB324
+P 8100 11000
+F 0 "#PWR0108" H 8100 10750 50  0001 C CNN
+F 1 "GND" V 8105 10872 50  0000 R CNN
+F 2 "" H 8100 11000 50  0001 C CNN
+F 3 "" H 8100 11000 50  0001 C CNN
+	1    8100 11000
+	0    1    1    0   
+$EndComp
+Text GLabel 10400 11900 2    50   Input ~ 0
+5V
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 63A0D6B1
+P 850 1950
+F 0 "J4" H 768 1625 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 768 1716 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 850 1950 50  0001 C CNN
+F 3 "~" H 850 1950 50  0001 C CNN
+	1    850  1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x09 J3
+U 1 1 63AC4A04
+P 900 18650
+F 0 "J3" H 818 18025 50  0000 C CNN
+F 1 "Screw_Terminal_01x09" H 818 18116 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x09_P5.00mm_45-Degree" H 900 18650 50  0001 C CNN
+F 3 "~" H 900 18650 50  0001 C CNN
+	1    900  18650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 13200 3150 13250
+Wire Wire Line
+	3150 13300 3150 13250
+Wire Wire Line
+	2850 13300 3150 13300
+$Comp
+L power:GND #PWR01
+U 1 1 63188F96
+P 3150 1500
+F 0 "#PWR01" H 3150 1250 50  0001 C CNN
+F 1 "GND" V 3155 1372 50  0000 R CNN
+F 2 "" H 3150 1500 50  0001 C CNN
+F 3 "" H 3150 1500 50  0001 C CNN
+	1    3150 1500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 1500
+$Comp
+L power:GND #PWR02
+U 1 1 6318A428
+P 3150 2300
+F 0 "#PWR02" H 3150 2050 50  0001 C CNN
+F 1 "GND" V 3155 2172 50  0000 R CNN
+F 2 "" H 3150 2300 50  0001 C CNN
+F 3 "" H 3150 2300 50  0001 C CNN
+	1    3150 2300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 2300
+$Comp
+L power:GND #PWR03
+U 1 1 6318EB6F
+P 3150 3100
+F 0 "#PWR03" H 3150 2850 50  0001 C CNN
+F 1 "GND" V 3155 2972 50  0000 R CNN
+F 2 "" H 3150 3100 50  0001 C CNN
+F 3 "" H 3150 3100 50  0001 C CNN
+	1    3150 3100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 3100
+$Comp
+L power:GND #PWR04
+U 1 1 63191719
+P 3150 3900
+F 0 "#PWR04" H 3150 3650 50  0001 C CNN
+F 1 "GND" V 3155 3772 50  0000 R CNN
+F 2 "" H 3150 3900 50  0001 C CNN
+F 3 "" H 3150 3900 50  0001 C CNN
+	1    3150 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 3900
+$Comp
+L power:GND #PWR05
+U 1 1 63196ABC
+P 3150 4750
+F 0 "#PWR05" H 3150 4500 50  0001 C CNN
+F 1 "GND" V 3155 4622 50  0000 R CNN
+F 2 "" H 3150 4750 50  0001 C CNN
+F 3 "" H 3150 4750 50  0001 C CNN
+	1    3150 4750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 4750
+$Comp
+L power:GND #PWR06
+U 1 1 6319A6CD
+P 3150 5550
+F 0 "#PWR06" H 3150 5300 50  0001 C CNN
+F 1 "GND" V 3155 5422 50  0000 R CNN
+F 2 "" H 3150 5550 50  0001 C CNN
+F 3 "" H 3150 5550 50  0001 C CNN
+	1    3150 5550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 5550
+$Comp
+L Device:R R31
+U 1 1 631D7854
+P 3150 5900
+F 0 "R31" H 3080 5854 50  0000 R CNN
+F 1 "10K" H 3080 5945 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 5900 50  0001 C CNN
+F 3 "~" H 3150 5900 50  0001 C CNN
+	1    3150 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC14 U10
+U 6 1 631F2869
+P 3700 6050
+F 0 "U10" H 3700 6367 50  0000 C CNN
+F 1 "74HC14" H 3700 6276 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 6050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 3700 6050 50  0001 C CNN
+	6    3700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 631CD210
+P 3150 6350
+F 0 "#PWR07" H 3150 6100 50  0001 C CNN
+F 1 "GND" V 3155 6222 50  0000 R CNN
+F 2 "" H 3150 6350 50  0001 C CNN
+F 3 "" H 3150 6350 50  0001 C CNN
+	1    3150 6350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 6350
+$Comp
+L power:GND #PWR08
+U 1 1 631D045B
+P 3150 7150
+F 0 "#PWR08" H 3150 6900 50  0001 C CNN
+F 1 "GND" V 3155 7022 50  0000 R CNN
+F 2 "" H 3150 7150 50  0001 C CNN
+F 3 "" H 3150 7150 50  0001 C CNN
+	1    3150 7150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 7150
+$Comp
+L power:GND #PWR09
+U 1 1 6323B878
+P 3150 8700
+F 0 "#PWR09" H 3150 8450 50  0001 C CNN
+F 1 "GND" V 3155 8572 50  0000 R CNN
+F 2 "" H 3150 8700 50  0001 C CNN
+F 3 "" H 3150 8700 50  0001 C CNN
+	1    3150 8700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 8700
+$Comp
+L power:GND #PWR010
+U 1 1 6323F855
+P 3150 9500
+F 0 "#PWR010" H 3150 9250 50  0001 C CNN
+F 1 "GND" V 3155 9372 50  0000 R CNN
+F 2 "" H 3150 9500 50  0001 C CNN
+F 3 "" H 3150 9500 50  0001 C CNN
+	1    3150 9500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 9500
+$Comp
+L power:GND #PWR011
+U 1 1 632432E4
+P 3150 10350
+F 0 "#PWR011" H 3150 10100 50  0001 C CNN
+F 1 "GND" V 3155 10222 50  0000 R CNN
+F 2 "" H 3150 10350 50  0001 C CNN
+F 3 "" H 3150 10350 50  0001 C CNN
+	1    3150 10350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 10350
+$Comp
+L power:GND #PWR012
+U 1 1 6324710A
+P 3150 11150
+F 0 "#PWR012" H 3150 10900 50  0001 C CNN
+F 1 "GND" V 3155 11022 50  0000 R CNN
+F 2 "" H 3150 11150 50  0001 C CNN
+F 3 "" H 3150 11150 50  0001 C CNN
+	1    3150 11150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 11150
+$Comp
+L power:GND #PWR013
+U 1 1 6325093D
+P 3150 11950
+F 0 "#PWR013" H 3150 11700 50  0001 C CNN
+F 1 "GND" V 3155 11822 50  0000 R CNN
+F 2 "" H 3150 11950 50  0001 C CNN
+F 3 "" H 3150 11950 50  0001 C CNN
+	1    3150 11950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 11950
+$Comp
+L power:GND #PWR014
+U 1 1 63254CAA
+P 3150 12750
+F 0 "#PWR014" H 3150 12500 50  0001 C CNN
+F 1 "GND" V 3155 12622 50  0000 R CNN
+F 2 "" H 3150 12750 50  0001 C CNN
+F 3 "" H 3150 12750 50  0001 C CNN
+	1    3150 12750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 12750
+$Comp
+L power:GND #PWR015
+U 1 1 6325595A
+P 3150 13550
+F 0 "#PWR015" H 3150 13300 50  0001 C CNN
+F 1 "GND" V 3155 13422 50  0000 R CNN
+F 2 "" H 3150 13550 50  0001 C CNN
+F 3 "" H 3150 13550 50  0001 C CNN
+	1    3150 13550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 13550
+$Comp
+L power:GND #PWR016
+U 1 1 6325D214
+P 3150 14350
+F 0 "#PWR016" H 3150 14100 50  0001 C CNN
+F 1 "GND" V 3155 14222 50  0000 R CNN
+F 2 "" H 3150 14350 50  0001 C CNN
+F 3 "" H 3150 14350 50  0001 C CNN
+	1    3150 14350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 14350
+$Comp
+L power:GND #PWR017
+U 1 1 63260D21
+P 3150 15750
+F 0 "#PWR017" H 3150 15500 50  0001 C CNN
+F 1 "GND" V 3155 15622 50  0000 R CNN
+F 2 "" H 3150 15750 50  0001 C CNN
+F 3 "" H 3150 15750 50  0001 C CNN
+	1    3150 15750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 15750
+$Comp
+L power:GND #PWR018
+U 1 1 63262838
+P 3150 16550
+F 0 "#PWR018" H 3150 16300 50  0001 C CNN
+F 1 "GND" V 3155 16422 50  0000 R CNN
+F 2 "" H 3150 16550 50  0001 C CNN
+F 3 "" H 3150 16550 50  0001 C CNN
+	1    3150 16550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 16550
+$Comp
+L power:GND #PWR019
+U 1 1 63264B92
+P 3150 17400
+F 0 "#PWR019" H 3150 17150 50  0001 C CNN
+F 1 "GND" V 3155 17272 50  0000 R CNN
+F 2 "" H 3150 17400 50  0001 C CNN
+F 3 "" H 3150 17400 50  0001 C CNN
+	1    3150 17400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 17400
+$Comp
+L power:GND #PWR020
+U 1 1 6326733B
+P 3150 18200
+F 0 "#PWR020" H 3150 17950 50  0001 C CNN
+F 1 "GND" V 3155 18072 50  0000 R CNN
+F 2 "" H 3150 18200 50  0001 C CNN
+F 3 "" H 3150 18200 50  0001 C CNN
+	1    3150 18200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 18200
+$Comp
+L power:GND #PWR021
+U 1 1 6326E6C7
+P 3150 19000
+F 0 "#PWR021" H 3150 18750 50  0001 C CNN
+F 1 "GND" V 3155 18872 50  0000 R CNN
+F 2 "" H 3150 19000 50  0001 C CNN
+F 3 "" H 3150 19000 50  0001 C CNN
+	1    3150 19000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 19000
+Text GLabel 1800 1450 0    50   Input ~ 0
+1M
+$Comp
+L power:GND #PWR022
+U 1 1 63271FE9
+P 3150 19800
+F 0 "#PWR022" H 3150 19550 50  0001 C CNN
+F 1 "GND" V 3155 19672 50  0000 R CNN
+F 2 "" H 3150 19800 50  0001 C CNN
+F 3 "" H 3150 19800 50  0001 C CNN
+	1    3150 19800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 19800
+$Comp
+L power:GND #PWR023
+U 1 1 63275475
+P 3150 20650
+F 0 "#PWR023" H 3150 20400 50  0001 C CNN
+F 1 "GND" V 3155 20522 50  0000 R CNN
+F 2 "" H 3150 20650 50  0001 C CNN
+F 3 "" H 3150 20650 50  0001 C CNN
+	1    3150 20650
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 20650
+$Comp
+L power:GND #PWR024
+U 1 1 63277109
+P 3150 21450
+F 0 "#PWR024" H 3150 21200 50  0001 C CNN
+F 1 "GND" V 3155 21322 50  0000 R CNN
+F 2 "" H 3150 21450 50  0001 C CNN
+F 3 "" H 3150 21450 50  0001 C CNN
+	1    3150 21450
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3150 21450
+Text GLabel 1000 3900 2    50   Input ~ 0
+IN23
+$Comp
+L Relay:ADW11 K?
+U 1 1 635D1937
+P 15600 12550
+F 0 "K?" H 16030 12596 50  0000 L CNN
+F 1 "ADW11" H 16030 12505 50  0000 L CNN
+F 2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 16925 12500 50  0001 C CNN
+F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 15600 12550 50  0001 C CNN
+	1    15600 12550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
