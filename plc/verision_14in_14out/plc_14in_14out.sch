@@ -2624,4 +2624,10 @@ Text GLabel 7050 9900 2    50   Input ~ 0
 5V
 Wire Wire Line
 	6900 9900 7050 9900
+Wire Wire Line
+	14650 5900 15300 5900
+Wire Wire Line
+	15300 5900 15300 6050
+Wire Wire Line
+	15300 6050 15000 6050
 $EndSCHEMATC

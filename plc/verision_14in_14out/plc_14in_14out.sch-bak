@@ -2409,19 +2409,19 @@ Wire Wire Line
 	17950 13750 18200 13750
 Wire Wire Line
 	18200 14050 17950 14050
-Text GLabel 19150 13500 1    50   Input ~ 0
+Text GLabel 19550 13850 1    50   Input ~ 0
 24V
-Text GLabel 19150 14100 3    50   Input ~ 0
+Text GLabel 19550 14450 3    50   Input ~ 0
 1C
 $Comp
 L relay:UMS05-1A80-75L K1
 U 1 1 637A6365
-P 19350 13800
-F 0 "K1" H 19630 13846 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 13755 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 13750 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 13800 50  0001 C CNN
-	1    19350 13800
+P 19750 14150
+F 0 "K1" H 20030 14196 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 14105 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 14100 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 14150 50  0001 C CNN
+	1    19750 14150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2448,7 +2448,7 @@ F 3 "~" H 21600 10150 50  0001 C CNN
 $EndComp
 Text GLabel 21400 10350 0    50   Input ~ 0
 COM0
-Text GLabel 19550 13500 1    50   Input ~ 0
+Text GLabel 19950 13850 1    50   Input ~ 0
 COM0
 Text GLabel 21400 10250 0    50   Input ~ 0
 O0
@@ -2468,140 +2468,140 @@ Text GLabel 21400 9350 0    50   Input ~ 0
 O7
 Text GLabel 21400 9750 0    50   Input ~ 0
 COM1
-Text GLabel 19550 14100 3    50   Input ~ 0
+Text GLabel 19950 14450 3    50   Input ~ 0
 O0
-Text GLabel 19150 12400 1    50   Input ~ 0
+Text GLabel 19550 12750 1    50   Input ~ 0
 24V
-Text GLabel 19150 13000 3    50   Input ~ 0
+Text GLabel 19550 13350 3    50   Input ~ 0
 2C
 $Comp
 L relay:UMS05-1A80-75L K2
 U 1 1 63868B1A
-P 19350 12700
-F 0 "K2" H 19630 12746 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 12655 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 12650 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 12700 50  0001 C CNN
-	1    19350 12700
+P 19750 13050
+F 0 "K2" H 20030 13096 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 13005 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 13000 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 13050 50  0001 C CNN
+	1    19750 13050
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 12400 1    50   Input ~ 0
+Text GLabel 19950 12750 1    50   Input ~ 0
 COM0
-Text GLabel 19550 13000 3    50   Input ~ 0
+Text GLabel 19950 13350 3    50   Input ~ 0
 O1
-Text GLabel 19150 11300 1    50   Input ~ 0
+Text GLabel 19550 11650 1    50   Input ~ 0
 24V
-Text GLabel 19150 11900 3    50   Input ~ 0
+Text GLabel 19550 12250 3    50   Input ~ 0
 3C
 $Comp
 L relay:UMS05-1A80-75L K3
 U 1 1 638787ED
-P 19350 11600
-F 0 "K3" H 19630 11646 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 11555 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 11550 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 11600 50  0001 C CNN
-	1    19350 11600
+P 19750 11950
+F 0 "K3" H 20030 11996 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 11905 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 11900 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 11950 50  0001 C CNN
+	1    19750 11950
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 11300 1    50   Input ~ 0
+Text GLabel 19950 11650 1    50   Input ~ 0
 COM0
-Text GLabel 19550 11900 3    50   Input ~ 0
+Text GLabel 19950 12250 3    50   Input ~ 0
 O2
-Text GLabel 19150 10200 1    50   Input ~ 0
+Text GLabel 19550 10550 1    50   Input ~ 0
 24V
-Text GLabel 19150 10800 3    50   Input ~ 0
+Text GLabel 19550 11150 3    50   Input ~ 0
 4C
 $Comp
 L relay:UMS05-1A80-75L K4
 U 1 1 638787FB
-P 19350 10500
-F 0 "K4" H 19630 10546 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 10455 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 10450 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 10500 50  0001 C CNN
-	1    19350 10500
+P 19750 10850
+F 0 "K4" H 20030 10896 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 10805 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 10800 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 10850 50  0001 C CNN
+	1    19750 10850
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 10200 1    50   Input ~ 0
+Text GLabel 19950 10550 1    50   Input ~ 0
 COM0
-Text GLabel 19550 10800 3    50   Input ~ 0
+Text GLabel 19950 11150 3    50   Input ~ 0
 O3
-Text GLabel 19150 9100 1    50   Input ~ 0
+Text GLabel 19550 9450 1    50   Input ~ 0
 24V
-Text GLabel 19150 9700 3    50   Input ~ 0
+Text GLabel 19550 10050 3    50   Input ~ 0
 5C
 $Comp
 L relay:UMS05-1A80-75L K5
 U 1 1 638918EC
-P 19350 9400
-F 0 "K5" H 19630 9446 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 9355 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 9350 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 9400 50  0001 C CNN
-	1    19350 9400
+P 19750 9750
+F 0 "K5" H 20030 9796 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 9705 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 9700 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 9750 50  0001 C CNN
+	1    19750 9750
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 9100 1    50   Input ~ 0
+Text GLabel 19950 9450 1    50   Input ~ 0
 COM1
-Text GLabel 19550 9700 3    50   Input ~ 0
+Text GLabel 19950 10050 3    50   Input ~ 0
 O4
-Text GLabel 19150 8000 1    50   Input ~ 0
+Text GLabel 19550 8350 1    50   Input ~ 0
 24V
-Text GLabel 19150 8600 3    50   Input ~ 0
+Text GLabel 19550 8950 3    50   Input ~ 0
 6C
 $Comp
 L relay:UMS05-1A80-75L K6
 U 1 1 638918FA
-P 19350 8300
-F 0 "K6" H 19630 8346 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 8255 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 8250 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 8300 50  0001 C CNN
-	1    19350 8300
+P 19750 8650
+F 0 "K6" H 20030 8696 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 8605 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 8600 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 8650 50  0001 C CNN
+	1    19750 8650
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 8000 1    50   Input ~ 0
+Text GLabel 19950 8350 1    50   Input ~ 0
 COM1
-Text GLabel 19550 8600 3    50   Input ~ 0
+Text GLabel 19950 8950 3    50   Input ~ 0
 O5
-Text GLabel 19150 6900 1    50   Input ~ 0
+Text GLabel 19550 7250 1    50   Input ~ 0
 24V
-Text GLabel 19150 7500 3    50   Input ~ 0
+Text GLabel 19550 7850 3    50   Input ~ 0
 7C
 $Comp
 L relay:UMS05-1A80-75L K7
 U 1 1 63891908
-P 19350 7200
-F 0 "K7" H 19630 7246 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 7155 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 7150 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 7200 50  0001 C CNN
-	1    19350 7200
+P 19750 7550
+F 0 "K7" H 20030 7596 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 7505 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 7500 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 7550 50  0001 C CNN
+	1    19750 7550
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 7500 3    50   Input ~ 0
+Text GLabel 19950 7850 3    50   Input ~ 0
 O6
-Text GLabel 19150 5800 1    50   Input ~ 0
+Text GLabel 19550 6150 1    50   Input ~ 0
 24V
-Text GLabel 19150 6400 3    50   Input ~ 0
+Text GLabel 19550 6750 3    50   Input ~ 0
 8C
 $Comp
 L relay:UMS05-1A80-75L K8
 U 1 1 63891916
-P 19350 6100
-F 0 "K8" H 19630 6146 50  0000 L CNN
-F 1 "UMS05-1A80-75L" H 19630 6055 50  0000 L CNN
-F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 19650 6050 50  0001 L CNN
-F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19350 6100 50  0001 C CNN
-	1    19350 6100
+P 19750 6450
+F 0 "K8" H 20030 6496 50  0000 L CNN
+F 1 "UMS05-1A80-75L" H 20030 6405 50  0000 L CNN
+F 2 "relay_HF49FD_024_1H11:Relay_SPST_TE_PCN-1xxD3MHZ" H 20050 6400 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 19750 6450 50  0001 C CNN
+	1    19750 6450
 	1    0    0    -1  
 $EndComp
-Text GLabel 19550 6400 3    50   Input ~ 0
+Text GLabel 19950 6750 3    50   Input ~ 0
 O7
-Text GLabel 19550 5800 1    50   Input ~ 0
+Text GLabel 19950 6150 1    50   Input ~ 0
 COM1
-Text GLabel 19550 6900 1    50   Input ~ 0
+Text GLabel 19950 7250 1    50   Input ~ 0
 COM1
 Text GLabel 16800 10750 2    50   Input ~ 0
 6C
