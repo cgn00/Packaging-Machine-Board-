@@ -4077,7 +4077,7 @@ L Connector:Screw_Terminal_01x06 J9
 U 1 1 63B41B4E
 P 2700 21200
 F 0 "J9" V 2664 20812 50  0000 R CNN
-F 1 "Screw_Terminal_01x06" V 2573 20812 50  0000 R CNN
+F 1 "DD2712SA - 5V" V 2573 20812 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2700 21200 50  0001 C CNN
 F 3 "~" H 2700 21200 50  0001 C CNN
 	1    2700 21200
@@ -4101,8 +4101,6 @@ $EndComp
 Connection ~ 2750 21400
 Wire Wire Line
 	2750 21400 2800 21400
-Wire Wire Line
-	2550 21450 2550 21400
 Connection ~ 2550 21400
 Wire Wire Line
 	2550 21400 2600 21400
@@ -4111,7 +4109,7 @@ L Connector:Screw_Terminal_01x06 J10
 U 1 1 63C9113A
 P 2700 21900
 F 0 "J10" V 2664 21512 50  0000 R CNN
-F 1 "Screw_Terminal_01x06" V 2573 21512 50  0000 R CNN
+F 1 "DD2712SA - 12V" V 2573 21512 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2700 21900 50  0001 C CNN
 F 3 "~" H 2700 21900 50  0001 C CNN
 	1    2700 21900
@@ -4166,18 +4164,6 @@ F 3 "" H 1400 22000 50  0001 C CNN
 $EndComp
 Text GLabel 1400 21900 2    50   Input ~ 0
 12V
-$Comp
-L teensy:Teensy3.5_All_Pins U19
-U 1 1 63E6F95E
-P 11900 14550
-F 0 "U19" H 11900 17293 60  0000 C CNN
-F 1 "Teensy3.5_All_Pins" H 11900 17187 60  0000 C CNN
-F 2 "teensy:Teensy35_36_MODIFY" H 11900 17081 60  0000 C CNN
-F 3 "https://www.pjrc.com/teensy/card8a_rev2.pdf" H 11900 38400 60  0001 C CNN
-F 4 "https://www.pjrc.com/teensy/pinout.html" H 10750 24550 50  0001 C CNN "Pinouts"
-	1    11900 14550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14250 15900 14200 15900
 $Comp
@@ -5175,7 +5161,6 @@ NoConn ~ 10950 950
 NoConn ~ 10950 1050
 NoConn ~ 10950 1250
 NoConn ~ 11750 2300
-NoConn ~ 13050 13500
 NoConn ~ 13050 13000
 NoConn ~ 13050 12900
 NoConn ~ 13050 12800
@@ -5324,7 +5309,7 @@ Wire Wire Line
 	5200 22050 5600 22050
 Wire Wire Line
 	900  21300 1100 21300
-Text GLabel 2550 21450 3    50   Input ~ 0
+Text GLabel 2550 21600 3    50   Input ~ 0
 5V
 Wire Wire Line
 	2350 18650 2550 18650
@@ -5426,4 +5411,52 @@ F 3 "" H 14150 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 2450 3400 2800
+$Comp
+L teensy:Teensy3.5_All_Pins U19
+U 1 1 63E6F95E
+P 11900 14550
+F 0 "U19" H 11900 17293 60  0000 C CNN
+F 1 "Teensy3.5_All_Pins" H 11900 17187 60  0000 C CNN
+F 2 "teensy:Teensy35_36_MODIFY" H 11900 17081 60  0000 C CNN
+F 3 "https://www.pjrc.com/teensy/card8a_rev2.pdf" H 11900 38400 60  0001 C CNN
+F 4 "https://www.pjrc.com/teensy/pinout.html" H 10750 24550 50  0001 C CNN "Pinouts"
+	1    11900 14550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J26
+U 1 1 637C4B7C
+P 14850 1750
+F 0 "J26" V 14814 1662 50  0000 R CNN
+F 1 "3V3" V 14723 1662 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 14850 1750 50  0001 C CNN
+F 3 "~" H 14850 1750 50  0001 C CNN
+	1    14850 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13100 13500 13050 13500
+NoConn ~ 13100 13500
+Wire Wire Line
+	14850 1950 14850 2100
+$Comp
+L Connector:Screw_Terminal_01x01 J27
+U 1 1 6395B61D
+P 2200 21550
+F 0 "J27" H 2118 21325 50  0000 C CNN
+F 1 "5V" H 2118 21416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2200 21550 50  0001 C CNN
+F 3 "~" H 2200 21550 50  0001 C CNN
+	1    2200 21550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 21400 2550 21550
+Wire Wire Line
+	2400 21550 2550 21550
+Connection ~ 2550 21550
+Wire Wire Line
+	2550 21550 2550 21600
+Text Notes 20800 3350 0    79   ~ 0
+Nota: A VGE y VGE1 se conectan los 12Vdc que entrega el regulador de voltage DD2712SA -12V
 $EndSCHEMATC
