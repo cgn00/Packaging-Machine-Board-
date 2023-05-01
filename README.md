@@ -1,15 +1,15 @@
-# Packaging-Machine-Board-
-# Diseño de Tarjeta Controladora para Máquina Empaquetadora
+# Packaging Machine Controller Board Design
 
-Este repositorio contiene el diseño de una tarjeta controladora para una máquina empaquetadora basada en el microcontrolador Teensy 3.5. La tarjeta controladora permite el control de los motores, sensores y actuadores necesarios para el proceso de empaquetado.
+This repository contains the design of a controller board for a packaging machine based on the Teensy 3.5 microcontroller. The controller board allows for control of the motors, sensors, and actuators necessary for the packaging process.
 
-## Instalación
+## Installation
 
-Para utilizar esta tarjeta controladora, se requiere el software de diseño de circuitos KiCAD. Clone este repositorio y abra el archivo .pro en KiCAD.
+To use this controller board, the KiCAD circuit design software is required. Clone this repository and open the .pro file in KiCAD.
 
-## Uso
+## Usage
 
-La tarjeta controladora está diseñada para ser utilizada en una máquina empaquetadora. Los pines están etiquetados y se pueden conectar fácilmente a los motores, sensores y actuadores correspondientes.
+The controller board is designed to be used in a packaging machine. The pins are labeled and can be easily connected to the corresponding motors, sensors, and actuators.
 
-El firmware necesario para el funcionamiento de la máquina empaquetadora se puede cargar en el microcontrolador Teensy 3.5 utilizando el software de desarrollo de Arduino.
+The firmware necessary for the operation of the packaging machine can be loaded onto the Teensy 3.5 microcontroller using the Arduino development software.
+
 
